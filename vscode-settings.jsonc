@@ -1,0 +1,97 @@
+{
+    "terminal.integrated.defaultProfile.osx": "fish",
+    "workbench.colorTheme": "Vitesse Dark",
+    "editor.minimap.enabled": true,
+    // Enable the ESlint flat config support
+    "eslint.experimental.useFlatConfig": true,
+    // Disable the default formatter, use eslint instead
+    "editor.formatOnSave": false,
+    // Auto fix
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit",
+      "source.organizeImports": "never"
+    },
+    // Enable eslint for all supported languages
+    "eslint.validate": [
+      "javascript",
+      "javascriptreact",
+      "typescript",
+      "typescriptreact",
+      "vue",
+      "html",
+      "markdown",
+      "json",
+      "jsonc",
+      "yaml"
+    ],
+    "workbench.sideBar.location": "right",
+    "editor.fontVariations": true,
+    "editor.fontLigatures": true,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.cursorBlinking": "smooth",
+    "editor.fontFamily": "Geist Mono, Monaspace Argon Var, Menlo, Monaco, 'Courier New', monospace",
+    "apc.font.family": "Geist Mono",
+    "breadcrumbs.enabled": false, // hides breadcrumb path at top of window
+    "window.commandCenter": false, // hides command center at the top of the window. Use cmd+shift+p instead
+    "workbench.layoutControl.enabled": false, // hides those little squares on the top right of the window
+    "workbench.editor.editorActionsLocation": "hidden", // hides the "format" and ellipsis buttons on the top right of the window
+    "editor.minimap.renderCharacters": false, // make minimap blockish (low level of detail)
+    "editor.hideCursorInOverviewRuler": true, // don't highlight current line in scrollbar
+    "editor.minimap.autohide": true, // shows minimap only on hover
+    "workbench.activityBar.location": "hidden", // hide sidebar icons, use cmd+b to toggle open
+    "workbench.statusBar.visible": false, // hide bottom bar
+    "editor.stickyScroll.enabled": true, // keep block name fixed at top when scrolling
+    "editor.wordWrap": "on", // wrap text instead of scrolling horizontally
+    "workbench.iconTheme": "chalice-icon-theme",
+    "git.autofetch": true,
+    "typescript.preferences.importModuleSpecifier": "non-relative", // prefer aliases when importing
+    "editor.lineHeight": 1.42857, // makes font size 14 have line height of ~20px
+    "editor.linkedEditing": true,
+    "editor.inlineSuggest.enabled": true,
+    "workbench.colorCustomizations": {
+      "editorGutter.addedBackground": "#42e5ba50",
+      "editorGutter.deletedBackground": "#e5424250",
+      "editorGutter.modifiedBackground": "#7b42e550"
+    },
+    "editor.tokenColorCustomizations": {
+      "textMateRules": [
+        {
+          "name": "String, Symbols, Inherited Class",
+          "scope": [
+            "string",
+            "constant.other.symbol",
+            "constant.other.key",
+            "meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
+          ],
+          "settings": {
+            "foreground": "#A0A0A0"
+          }
+        },
+        {
+          "name": "CSS ID's",
+          "scope": [
+            "source.sass keyword.control",
+            "meta.attribute-selector.scss"
+          ],
+          "settings": {
+            "foreground": "#ffffff"
+          }
+        },
+        {
+          "name": "Inserted",
+          "scope": [
+            "markup.inserted"
+          ],
+          "settings": {
+            "foreground": "#ffffff"
+          }
+        }
+      ]
+    },
+    "cursor.cpp.disabledLanguages": [
+      "plaintext",
+      "markdown",
+      "scminput"
+    ],
+    "window.zoomLevel": 2
+}
